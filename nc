@@ -1,2 +1,6 @@
 #!/usr/bin/python
-print("Hello World")
+
+from number_converter import nc_main
+
+if __name__ == "__main__":
+    nc_main()
