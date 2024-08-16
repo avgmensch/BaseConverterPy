@@ -10,5 +10,8 @@
     },
     "material-icon-theme.folders.associations": {
         "number_converter": "src"
-    }
+    },
+    "cSpell.words": [
+        "argstr"
+    ]
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from number_converter import nc_main
+from number_converter import number_converter_cli
 
 if __name__ == "__main__":
-    nc_main()
+    number_converter_cli()

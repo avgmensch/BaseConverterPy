@@ -1,2 +1,2 @@
 # type: ignore
-from .main import nc_main
+from .cli import number_converter_cli
