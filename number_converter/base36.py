@@ -37,3 +37,9 @@ BASE36_TO_BASE10_MAP: dict[str, int] = {
     "Z": 35,
 }
 """Map 0-9 and A-Z from base-36 to their base-10 number equivalents."""
+
+
+# https://stackoverflow.com/a/2569074
+BASE10_TO_BASE36_MAP: dict[int, str] = {v: k for k, v in
+                                        BASE36_TO_BASE10_MAP.items()}
+"""Map 0-35 from base-10 to their base-36 number equivalents."""

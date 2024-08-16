@@ -2,6 +2,6 @@ from .number_list import NumberList
 
 
 def nc_main() -> None:
-    base, val = 36, "10"
-    num_list = NumberList(base, val)
-    print(f"{val}#{base} = {num_list.base10()}#10")
+    base, val = 16, "A"
+    nl = NumberList(base, val)
+    print(f"{val}#{base} = {nl.base10()}#10 = {nl.change_base(2).num}#2")

@@ -1,4 +1,4 @@
-from .base36 import BASE36_TO_BASE10_MAP
+from .base36 import BASE36_TO_BASE10_MAP, BASE10_TO_BASE36_MAP
 
 
 def trim_non_base36_symbols(txt: str) -> str:
@@ -27,3 +27,17 @@ class NumberList:
             result += BASE36_TO_BASE10_MAP[c] * self.base ** worth
             worth -= 1
         return result
+
+    def change_base(self, new_base: int) -> 'NumberList':
+        """
+        Convert `self.num` to `new_base`. If `new_base==10`, use
+        `self.base10()`, because there you get an integer.
+        """
+        base10: int = self.base10()
+        result: list[str] = []
+        while base10 != 0:
+            remainder_b10: int = base10 % new_base
+            remainder_bn: str = BASE10_TO_BASE36_MAP[remainder_b10]
+            result.insert(0, remainder_bn)
+            base10 //= new_base
+        return NumberList(new_base, "".join(result))
