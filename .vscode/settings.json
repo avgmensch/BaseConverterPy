@@ -1,0 +1,11 @@
+{
+    "python.analysis.typeCheckingMode": "strict",
+    "[python]": {
+        "editor.rulers": [79],
+        "editor.tabSize": 4
+    },
+    "[markdown]": {
+        "editor.rulers": [80],
+        "editor.wordWrap": "bounded"
+    }
+}
