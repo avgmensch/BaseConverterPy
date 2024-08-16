@@ -1,2 +1,7 @@
+from .number_list import NumberList
+
+
 def nc_main() -> None:
-    print("Hello World from nc_main()")
+    base, val = 36, "10"
+    num_list = NumberList(base, val)
+    print(f"{val}#{base} = {num_list.base10()}#10")
