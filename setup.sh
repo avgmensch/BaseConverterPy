@@ -1,2 +1,2 @@
 #!/usr/bin/sh
-chmod +x ./nc ./setup.sh
+chmod +x ./format.sh ./nc ./setup.sh
